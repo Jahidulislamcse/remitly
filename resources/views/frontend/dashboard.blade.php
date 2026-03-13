@@ -266,7 +266,6 @@
         </div>
     </div>
 
-    @include('frontend.layout.footer')
 
 @endsection
 
