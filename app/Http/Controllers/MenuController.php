@@ -617,6 +617,19 @@ class MenuController extends Controller
         ));
     }
 
+    public function updateModules(Request $request, User $user)
+    {
+        $request->validate([
+            'modules' => 'nullable|array',
+            'modules.*' => 'string|in:home,deposit,recharge,withdraw,billpay',
+        ]);
+
+        $user->modules = $request->modules ? json_encode($request->modules) : null;
+        $user->save();
+
+        return redirect()->back()->with('msg', 'Modules updated successfully.');
+    }
+
     public function announce()
     {
         $title = 'User List';

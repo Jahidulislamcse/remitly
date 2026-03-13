@@ -80,6 +80,13 @@
                 </li>
 
                 <li class="dashboard-nav__items">
+                    <a href="{{ route('admin.users.create') }}" class="dashboard-nav__link">
+                        <i class="las la-user-plus"></i>
+                        <span class="dashboard-nav__link-text">Create User</span>
+                    </a>
+                </li>
+
+                <li class="dashboard-nav__items">
                     <a href="{{ route('notifications.index') }}" 
                        class="dashboard-nav__link {{ Request::routeIs('notifications.index') ? 'menu-active' : '' }}">
                         <i class="las la-bell"></i>

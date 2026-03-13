@@ -23,6 +23,7 @@ use App\Http\Controllers\MenualPaymentController;
 use App\Http\Controllers\PayableAccountController;
 use App\Http\Controllers\RemittanceController;
 use App\Http\Controllers\Admin\ChatLinkController;
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Chat\GroupController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\Frontend\UserAuthController;
@@ -259,6 +260,9 @@ Route::group(['middleware' => ['auth.admin']], function () {
     Route::get('/admin-dashboard', [MenuController::class, 'showAdminDashboard'])
         ->name('super.admin.dashboard');
 
+    Route::get('users/create', [UserController::class, 'create'])->name('admin.users.create');
+    Route::post('users/add', [UserController::class, 'store'])->name('admin.users.add');
+
     Route::get('notification', [NotificationController::class, 'index'])->name('notifications.index')->middleware('admin');
     Route::get('notification/create', [NotificationController::class, 'create'])->name('notifications.create')->middleware('admin');
     Route::post('notification/store', [NotificationController::class, 'store'])->name('notifications.store')->middleware('admin');
@@ -268,6 +272,7 @@ Route::group(['middleware' => ['auth.admin']], function () {
 
     Route::group(['controller' => MenuController::class], function () {
         Route::get('/admin/users/{user}', [MenuController::class, 'userInfo'])->name('admin.users.show');
+        Route::patch('admin/users/{user}/modules', [MenuController::class, 'updateModules'])->name('admin.users.updateModules');
         Route::get('/user/block/{id}', [MenuController::class, 'blockUser'])->name('user.block');
         Route::match(['get', 'post'], 'announce', 'announce')->name('announce');
         Route::match(['get', 'post'], 'users', 'users')->name('user.list');

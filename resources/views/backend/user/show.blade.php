@@ -228,6 +228,7 @@
                 $tab = $activeTab ?? 'deposits';
             @endphp
             <ul class="nav nav-tabs" id="userTabs" role="tablist">
+                
                 <li class="nav-item" role="presentation">
                     <a class="nav-link {{ $tab === 'deposits' ? 'active' : '' }}"
                         href="{{ route('admin.users.show', ['user' => $user->id, 'tab' => 'deposits']) }}">Deposits</a>
@@ -259,9 +260,49 @@
                         Visits
                     </a>
                 </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link {{ $tab === 'modules' ? 'active' : '' }}"
+                    href="{{ route('admin.users.show', ['user' => $user->id, 'tab' => 'modules']) }}">
+                        Module Access
+                    </a>
+                </li>
             </ul>
 
             <div class="tab-content pt-3">
+
+                @if ($tab === 'modules')
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <form method="POST" action="{{ route('admin.users.updateModules', $user->id) }}">
+                                @csrf
+                                @method('PATCH')
+
+                                <div class="d-flex flex-wrap gap-3">
+                                    @php
+                                        $userModules = json_decode($user->modules ?? '[]', true) ?: [];
+                                        $availableModules = ['home','deposit','recharge','withdraw','billpay'];
+                                    @endphp
+
+                                    @foreach ($availableModules as $module)
+                                        <div class="form-check me-3">
+                                            <input class="form-check-input" type="checkbox" 
+                                                name="modules[]" value="{{ $module }}"
+                                                id="module_{{ $module }}"
+                                                {{ in_array($module, $userModules) ? 'checked' : '' }}>
+                                            <label class="form-check-label" for="module_{{ $module }}">
+                                                {{ ucfirst($module) }}
+                                            </label>
+                                        </div>
+                                    @endforeach
+                                </div>
+
+                                <button type="submit" class="btn btn-primary mt-3">
+                                    Update Modules
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                @endif
 
                 @if ($tab === 'deposits')
                     <div class="list-cards">
