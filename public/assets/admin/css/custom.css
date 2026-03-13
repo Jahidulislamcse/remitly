@@ -1,0 +1,236 @@
+.rotate-45 {
+    rotate: -45deg;
+}
+
+
+.toggle-btn {
+    padding: 6px 15px;
+    border: 1px solid #067fab;
+    background: #fff;
+    color: #067fab;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.toggle-btn.active {
+    background: #067fab;
+    color: #fff;
+}
+
+
+.search-box {
+    margin-bottom: 15px;
+    padding: 6px 12px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.list-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.topup-card {
+    display: flex;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 12px;
+    background: #fff;
+    align-items: center;
+    transition: .2s;
+}
+
+.topup-card:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .08);
+}
+
+
+.topup-slot {
+    flex: 1;
+    min-width: 120px;
+    margin-right: 12px;
+}
+
+.topup-slot:last-child {
+    margin-right: 0;
+}
+
+
+.topup-user {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333;
+}
+
+.topup-phone,
+.topup-balance {
+    font-size: 12px;
+    color: #777;
+}
+
+
+.topup-amount {
+    font-weight: 700;
+    color: #067fab;
+    font-size: 14px;
+}
+
+
+.badge-status {
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.status-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.status-approved {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status-rejected {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+
+.topup-actions a {
+    margin-right: 5px;
+}
+
+.topup-actions .btn-circle {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width:768px) {
+
+    .topup-card {
+        padding: 8px;
+    }
+
+    .topup-slot {
+        min-width: 100px;
+        margin-right: 5px;
+        font-size: 12px;
+    }
+
+    .topup-user {
+        font-size: 13px;
+    }
+
+    .topup-phone,
+    .topup-balance,
+    .topup-amount,
+    .topup-actions a {
+        font-size: 11px;
+    }
+
+    .badge-status {
+        font-size: 11px;
+        padding: 2px 6px;
+    }
+
+    .toggle-btn {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+
+    .topup-actions .btn-circle {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.status-toggle {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    padding: 6px 10px;
+    border-radius: 14px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+}
+
+.status-toggle .toggle-btn {
+    flex: 0 0 auto;
+    padding: 3px 10px;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #1c7ed6;
+    font-weight: 500;
+    border: 1px solid #74c0fc;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.status-toggle .toggle-btn:hover {
+    transform: translateY(-2px);
+    background-color: #e7f5ff;
+}
+
+.status-toggle .toggle-btn.active {
+    background-color: #1c7ed6;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.operator-toggle {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 5px;
+    padding: 6px 10px;
+    border-radius: 16px;
+    border: 1px solid #ffb74d;
+    background: linear-gradient(90deg, #fff4e6, #ffe8cc);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    overflow-x: auto;
+}
+
+.operator-toggle .toggle-btn {
+    flex: 0 0 auto;
+    padding: 5px 12px;
+    border-radius: 12px;
+    background-color: #fff;
+    border: 1px solid #ffb74d;
+    color: #d9480f;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.operator-toggle .toggle-btn:hover {
+    transform: translateY(-2px);
+    background-color: #fff3e0;
+}
+
+.operator-toggle .toggle-btn.active {
+    background-color: #d9480f;
+    color: #fff;
+    border-color: #d9480f;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.status-toggle::-webkit-scrollbar,
+.operator-toggle::-webkit-scrollbar {
+    display: none;
+}

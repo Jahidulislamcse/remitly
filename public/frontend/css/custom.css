@@ -1,0 +1,88 @@
+ /* Navigation Menu Styles */
+ nav {
+     background-color: #ffffff;
+     color: #000000;
+     padding: 5px 40px;
+     position: relative;
+ }
+
+ /* Logo Styles */
+ .logo {
+     font-size: 24px;
+     font-weight: 600;
+     color: white;
+     text-transform: uppercase;
+     text-decoration: none;
+     letter-spacing: 2px;
+ }
+
+ .logo span {
+     color: #4CAF50;
+     /* Green accent color */
+ }
+
+ /* Menu styles */
+ .menu {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .menu > ul {
+     display: flex;
+     list-style: none;
+ }
+
+
+
+ .menu >ul> li >a {
+     color: rgb(3, 3, 3);
+     text-decoration: none;
+     font-size: 16px;
+     text-transform: uppercase;
+     padding: 10px;
+     display: block;
+     letter-spacing: 1px;
+ }
+
+ .menu >ul> li >a:hover {
+     background-color: #3367C1 ;
+     border-radius: 50px;
+     color: rgb(255, 255, 255);
+ }
+
+ /* Mobile Menu Toggle */
+ .menu-toggle {
+     display: none;
+     background: none;
+     border: none;
+     color: rgb(0, 0, 0);
+     font-size: 30px;
+     cursor: pointer;
+ }
+
+ /* Responsive Styles (Mobile) */
+ @media (max-width: 768px) {
+     .menu ul {
+         display: none;
+         flex-direction: column;
+         position: absolute;
+         top: 70px;
+         left: 0;
+         width: 100%;
+         background-color: #ffffff;
+         text-align: center;
+     }
+
+     .menu.active ul {
+         display: flex;
+     }
+
+     .menu ul li {
+         margin: 15px 0;
+     }
+
+     .menu-toggle {
+         display: block;
+     }
+ }

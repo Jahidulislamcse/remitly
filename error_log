@@ -1,0 +1,77 @@
+[13-Sep-2025 19:25:41 UTC] PHP Fatal error:  Uncaught RuntimeException: Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.2.0". You are running 8.1.33. in /home/probasip/public_html/vendor/composer/platform_check.php:26
+Stack trace:
+#0 /home/probasip/public_html/vendor/composer/autoload_real.php(25): require()
+#1 /home/probasip/public_html/vendor/autoload.php(22): ComposerAutoloaderInitc66e90e5866ef2518c868ef7aca61c12::getLoader()
+#2 /home/probasip/public_html/artisan(9): require('/home/probasip/...')
+#3 {main}
+  thrown in /home/probasip/public_html/vendor/composer/platform_check.php on line 26
+[26-Nov-2025 05:00:33 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[26-Nov-2025 05:00:38 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[26-Nov-2025 05:00:43 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[26-Nov-2025 05:00:48 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[26-Nov-2025 05:01:43 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[26-Nov-2025 05:01:48 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[26-Nov-2025 05:01:54 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[19-Dec-2025 06:29:44 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[19-Dec-2025 06:29:50 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[19-Dec-2025 06:29:56 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[19-Dec-2025 06:30:02 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[19-Dec-2025 06:32:46 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[19-Dec-2025 06:39:24 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[19-Dec-2025 06:41:29 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[21-Dec-2025 13:24:41 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[21-Dec-2025 13:25:22 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[21-Dec-2025 13:25:37 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[21-Dec-2025 13:25:42 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[21-Dec-2025 13:25:51 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[21-Dec-2025 14:13:19 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[26-Dec-2025 16:26:16 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[26-Dec-2025 16:26:43 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[26-Dec-2025 16:27:26 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[26-Dec-2025 16:27:41 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[26-Dec-2025 16:29:02 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[26-Dec-2025 16:46:57 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[26-Dec-2025 16:52:27 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[12-Jan-2026 08:43:15 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[12-Jan-2026 08:45:00 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[12-Jan-2026 08:45:10 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[12-Jan-2026 08:45:57 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[12-Jan-2026 09:16:06 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[12-Jan-2026 09:19:48 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[12-Jan-2026 16:19:32 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[12-Jan-2026 16:20:50 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[14-Jan-2026 09:50:34 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[14-Jan-2026 10:02:43 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[14-Jan-2026 15:56:23 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[14-Jan-2026 23:49:14 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[14-Jan-2026 23:50:22 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[18-Jan-2026 06:45:37 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[18-Jan-2026 06:48:42 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[19-Jan-2026 14:43:04 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[19-Jan-2026 14:44:03 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 14:00:06 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 15:47:40 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 15:47:46 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 15:47:51 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 15:47:58 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 15:48:04 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 15:48:04 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 15:48:04 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 15:48:04 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 16:23:03 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 17:30:32 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 17:35:55 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 17:43:13 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 17:49:19 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 17:55:42 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 17:55:56 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 17:56:13 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 17:58:41 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 18:07:58 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 18:16:32 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 18:16:32 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 18:16:33 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[27-Jan-2026 18:16:34 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[28-Jan-2026 09:04:39 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[28-Jan-2026 15:10:42 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
+[31-Jan-2026 07:33:53 UTC] PHP Deprecated:  Directive 'allow_url_include' is deprecated in Unknown on line 0
