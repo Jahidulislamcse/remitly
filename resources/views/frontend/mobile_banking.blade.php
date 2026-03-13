@@ -43,6 +43,8 @@
             'nagad' => ['name' => 'Nagad'],
             'upay' => ['name' => 'Upay'],
             'rocket' => ['name' => 'Rocket'],
+            'mcash' => ['name' => 'mCash'],
+            'ucash' => ['name' => 'Ucash'],
         ];
 
         $current = strtolower($operatorName ?? 'bkash');
@@ -69,6 +71,8 @@
                         'nagad' => '/images/front-icons/nagad3.png',
                         'upay' => '/images/front-icons/upay.png',
                         'rocket' => '/images/front-icons/rocket.png',
+                        'mcash' => '/images/front-icons/mcash.jpg',
+                        'ucash' => '/images/front-icons/ucash.jpg',
                     ];
                 @endphp
 
